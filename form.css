@@ -1,0 +1,130 @@
+.img{
+  background-image: url('https://res.cloudinary.com/dsueinfga/image/upload/v1692454511/abstract-blurred-colorful-gradient-background-in-soft-style_uigtgj.jpg');
+  height: 106vh;
+  width: 101vw;
+  background-size: cover;
+}
+.a{
+  color: white;
+  font-family: Times New Roman;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+.ca-front,.ca-back{
+  height:59vh;
+  width: 80vw;
+  backdrop-filter: blur(100px);
+  backface-visibility: hidden;
+  border-bottom-width: 0px;
+  border-left-color: white;
+  border-right-color: white;
+  border-top-width:0px;
+  border-left-width: 1.2px;
+  border-right-width: 1.2px;
+  border-style: solid;
+  border-radius: 4%;
+  position: absolute;
+}
+.b{
+  color: white;
+  font-weight: bold;
+  padding: 1px;
+  margin-left: 8vw;
+}
+.c{
+     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+  border-style:solid;
+  border-bottom-width: 1px;
+  border-bottom-color:white ;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-radius: 3%;
+  margin-left: 8vw;
+  color: white;
+font-style: italic;
+}
+.d{
+  background-color: #c20c0c;
+  margin-left:14.5vw ;
+  margin-top: 5vh;
+  border-radius: 7%;
+  border-width: 0px;
+  color: white;
+  height: 38px;
+  width: 70px;
+  font-size:12px;
+  font-weight: bold;
+}
+.e{
+  background-color: #1563bd;
+  margin-left:6.3vw ;
+  margin-top: 5vh;
+  border-radius: 7%;
+  border-width: 0px;
+  color: white;
+  height: 38px;
+  width: 70px;
+  font-size:12px;
+  font-weight: bold;
+}
+.e1{
+  background-color: #1563bd;
+  margin-left:8vw ;
+  margin-top: 5vh;
+  border-radius: 8px;
+  border-width: 0px;
+  color: white;
+  height: 45px;
+  width: 220px;
+  font-size:12px;
+  font-weight: bold;
+}
+.img1{
+  height: 24vh;
+  width: 42vw;
+  margin-left:20vw;
+  margin-top: -42vw;
+}
+.ca{
+  perspective: 1000%;
+  height:55vh;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top:7vh;
+}
+.ca-inner{
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+ .flips .ca-inner{
+  transform: rotateY(180deg);
+}
+.ca-back{
+  transform: rotateY(180deg);
+}
+.f{
+  color: white;
+text-align: center;
+margin-top: 6vh;
+font-style: italic;
+font-weight: bold;
+
+}
+.h{
+  height: 20vh;
+  width: 50vw;
+  margin-top: -13vw;
+  margin-left: 15vw;
+}
+.y{
+  color: white;
+  margin-top: -90vh;
+  font-size: 30px;
+  position: absolute;
+  margin-left: 5vw;
+}

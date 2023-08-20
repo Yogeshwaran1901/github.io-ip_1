@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>validateForm</title>
+         <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+  <div class="img d-flex flex-column justify-content-center">
+            <h1 class="y">AJY Online Shopping 🛒</h1>
+ <div class="ca">
+   <div class="ca-inner">
+      <div class="ca-front d-flex flex-column justify-content-center">
+   <img src="admin.png" class="img1"></img>
+    <h1 class="a">Login</h1>
+    <form onsubmit="return validateForm()" method="post">
+        <label for="username" class="b">Username</label>
+        <input type="text" id="username" name="username" class="c"><br>
+
+        <label for="password" class="b">Password</label>
+        <input type="password" id="password" name="password" class="c"><br>
+
+        <input type="submit" class="d" value="Login">
+                <button type="button" class="e" id="a1">Sign up</button>
+    </form>
+    </div>
+            
+
+     <div class="ca-back d-flex flex-column justify-content-center">    
+ <img src="admin2.png" class="img1"></img>
+    <h1 class="a">Sign Up!</h1>
+    <form method="post">
+        <label for="email" class="b">Email</label>
+        <input type="email" id="email" name="email" class="c"><br>
+
+        <label for="password1" class="b">Password</label>
+        <input type="password" id="password1" name="password1" class="c"><br>
+                <label for="password2" class="b">Confirm Password</label>
+        <input type="password" id="password2" name="password2" class="c"><br>
+                <button type="button" onclick="validateForm1()" class="e1">Sign up</button>
+    </form>
+    </div>
+    </div>
+            <p class="f">Follow us:</p>
+        <img src="socialmedia.png" class="h"></img>
+    </div>
+    
+        <script>
+                function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username=== "" || password === "") {
+                alert("Username and password must be filled out");
+                return false;
+            }
+          else{
+             alert('login successfully');
+                          window.location.href=("Shoppe.html");
+            return true;
+        }
+        }
+        var ca=document.querySelector('.ca');
+      var b=document.getElementById("a1");
+        b.addEventListener('click',()=>{ca.classList.toggle('flips');});
+        function validateForm1() {
+            const password1 = document.getElementById('password1').value;
+          const password2 = document.getElementById('password2').value;
+
+            if (password1 == password2 && password1!='') {
+              alert("Signed up successfully!")
+             window.location.href=("Shoppe.html");
+            }
+          else{
+ alert("Fill the blanks (or) Confirm the password should be same");
+        }
+        }
+        
+        </script>
+</body>
+</html>
